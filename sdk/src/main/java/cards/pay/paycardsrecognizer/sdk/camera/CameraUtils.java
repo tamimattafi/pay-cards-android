@@ -7,7 +7,7 @@ import androidx.annotation.RestrictTo;
 
 import cards.pay.paycardsrecognizer.sdk.utils.Size;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class CameraUtils {
 
     public static final NativeSupportedSize CAMERA_RESOLUTION = NativeSupportedSize.RESOLUTION_1280_X_720;

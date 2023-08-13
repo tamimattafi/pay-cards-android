@@ -12,7 +12,7 @@ import android.view.Surface;
 
 import cards.pay.paycardsrecognizer.sdk.BuildConfig;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class OrientationHelper {
 
     private static final boolean DBG = BuildConfig.DEBUG;

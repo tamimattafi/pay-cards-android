@@ -6,7 +6,7 @@ import androidx.annotation.RestrictTo;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class RecognitionConstants {
 
     public static final int DETECTED_BORDER_TOP =   1;

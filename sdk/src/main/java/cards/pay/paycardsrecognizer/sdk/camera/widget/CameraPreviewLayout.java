@@ -19,7 +19,7 @@ import androidx.core.view.ViewCompat;
 import cards.pay.paycardsrecognizer.sdk.R;
 import cards.pay.paycardsrecognizer.sdk.utils.Constants;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public class CameraPreviewLayout extends FrameLayout {
 
     private static final String TAG = "CameraPreviewLayout";

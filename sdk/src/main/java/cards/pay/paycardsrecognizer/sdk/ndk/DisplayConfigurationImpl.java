@@ -18,7 +18,7 @@ import static cards.pay.paycardsrecognizer.sdk.ndk.RecognitionConstants.WORK_ARE
 import static cards.pay.paycardsrecognizer.sdk.ndk.RecognitionConstants.WORK_AREA_ORIENTATION_PORTAIT;
 import static cards.pay.paycardsrecognizer.sdk.ndk.RecognitionConstants.WORK_AREA_ORIENTATION_PORTAIT_UPSIDE_DOWN;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public class DisplayConfigurationImpl implements DisplayConfiguration {
 
     private static final String TAG = "DisplayConfigImpl";

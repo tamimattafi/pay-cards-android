@@ -32,7 +32,7 @@ public final class ScanCardIntent {
     @IntDef(value = {BACK_PRESSED, ADD_MANUALLY_PRESSED})
     public @interface CancelReason {}
 
-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+    
     public static final String KEY_SCAN_CARD_REQUEST = "cards.pay.paycardsrecognizer.sdk.ui.ScanCardActivity.SCAN_CARD_REQUEST";
 
     private ScanCardIntent() {

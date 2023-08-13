@@ -4,7 +4,7 @@ import androidx.annotation.RestrictTo;
 
 import cards.pay.paycardsrecognizer.sdk.BuildConfig;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public class Constants {
 
     private Constants() { }

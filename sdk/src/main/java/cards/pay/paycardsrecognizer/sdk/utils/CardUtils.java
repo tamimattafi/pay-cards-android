@@ -5,7 +5,7 @@ import androidx.annotation.RestrictTo;
 
 import android.text.TextUtils;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class CardUtils {
 
     private CardUtils() {}

@@ -6,22 +6,23 @@ See live demo: [pay.cards](https://play.google.com/store/apps/details?id=cards.p
 
 ### Installation
 
-* Add Maven URL for the pay.cards repository to your project `build.gradle` file.
+* Add Maven URL for the jitpack.io repository to your project `build.gradle` file.
 
-    ```gradle
-    repositories {
-         maven { url "https://pay.cards/maven" }
-    }
-    ```
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+```
 
 
 * Add the dependency
+Latest version [![](https://jitpack.io/v/tamimattafi/pay-cards-android.svg)](https://jitpack.io/#tamimattafi/pay-cards-android)
 
-    ```gradle
-    dependencies {
-        implementation 'cards.pay:paycardsrecognizer:1.1.0'
-    }
-    ```
+```gradle
+dependencies {
+    implementation 'com.github.tamimattafi:pay-cards-android:$version'
+}
+```
 
 ### Usage
 
@@ -30,8 +31,6 @@ Build an Intent using the `ScanCardIntent.Builder` and start a new activity to p
 
 ```java
 static final int REQUEST_CODE_SCAN_CARD = 1;
- 
-...
      
 private void scanCard() {
   Intent intent = new ScanCardIntent.Builder(this).build();

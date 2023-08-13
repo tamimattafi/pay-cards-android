@@ -8,7 +8,6 @@ import android.widget.ProgressBar;
 
 import androidx.annotation.RestrictTo;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
 public class ProgressBarIndeterminate extends ProgressBar {
 
     public ProgressBarIndeterminate(Context context) {

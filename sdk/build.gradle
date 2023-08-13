@@ -1,3 +1,7 @@
+plugins {
+    id 'maven-publish'
+}
+
 apply plugin: 'com.android.library'
 
 android {
@@ -50,11 +54,20 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
     resourcePrefix "wocr_"
     namespace 'cards.pay.paycardsrecognizer.sdk'
 }
 
 dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"
+
     androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "com.facebook.device.yearclass:yearclass:2.1.0"
@@ -64,19 +77,22 @@ dependencies {
     // If you want to additionally use the CameraX View class
     implementation "androidx.camera:camera-view:1.2.3"
 
-//    implementation "androidx.window:window:1.2.0-alpha01"
+    implementation "androidx.core:core-ktx:1.10.1"
+    // implementation "androidx.window:window:1.2.0-alpha01"
 
     testImplementation "junit:junit:4.13.2"
 }
 
-//afterEvaluate { project ->
-//    android.libraryVariants.all { variant ->
-//        tasks.androidJavadocs.doFirst {
-//            include '**/cards/pay/paycardsrecognizer/sdk/*.java'
-//            options.encoding = "utf-8"
-//            options.charSet = "utf-8"
-//            options.showFromPublic()
-//            failOnError false
-//        }
-//    }
-//}
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.attafitamim.scanner'
+            artifactId = 'pay-cards'
+            version = '1.0.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}

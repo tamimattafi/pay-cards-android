@@ -27,7 +27,7 @@ import cards.pay.paycardsrecognizer.sdk.camera.widget.CameraPreviewLayout;
 import cards.pay.paycardsrecognizer.sdk.ndk.RecognitionCore;
 import cards.pay.paycardsrecognizer.sdk.utils.AsyncTaskV2;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class InitLibraryFragment extends Fragment {
 
     public static final String TAG = "InitLibraryFragment";

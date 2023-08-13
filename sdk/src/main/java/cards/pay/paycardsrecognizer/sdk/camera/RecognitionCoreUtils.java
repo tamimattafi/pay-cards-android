@@ -6,7 +6,7 @@ import androidx.annotation.RestrictTo;
 
 import cards.pay.paycardsrecognizer.sdk.ndk.RecognitionCore;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class RecognitionCoreUtils {
 
     private RecognitionCoreUtils() {

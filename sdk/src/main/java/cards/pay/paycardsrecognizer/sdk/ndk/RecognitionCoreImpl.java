@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RestrictTo;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public interface RecognitionCoreImpl {
 
     void setStatusListener(@Nullable RecognitionStatusListener listener);

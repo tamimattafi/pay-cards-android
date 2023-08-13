@@ -17,7 +17,7 @@ import java.util.Locale;
 import cards.pay.paycardsrecognizer.sdk.BuildConfig;
 import cards.pay.paycardsrecognizer.sdk.ndk.RecognitionCore;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
+
 public final class RecognitionAvailabilityChecker {
 
     private static final boolean DBG = BuildConfig.DEBUG;

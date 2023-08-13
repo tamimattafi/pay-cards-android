@@ -10,7 +10,6 @@ import androidx.annotation.RestrictTo;
 
 import cards.pay.paycardsrecognizer.sdk.R;
 
-@RestrictTo(RestrictTo.Scope.LIBRARY)
 public class TabletCardRecognitionHolderLinearLayout extends LinearLayout {
 
     private View mSurfaceView;

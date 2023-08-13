@@ -68,7 +68,7 @@ public class ScanCardActivity extends AppCompatActivity implements ScanCardFragm
     }
 
     @Override
-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+    
     public void onScanCardFailed(Exception e) {
         Log.e(TAG, "Scan card failed", new RuntimeException("onScanCardFinishedWithError()", e));
         setResult(ScanCardIntent.RESULT_CODE_ERROR);
@@ -76,7 +76,7 @@ public class ScanCardActivity extends AppCompatActivity implements ScanCardFragm
     }
 
     @Override
-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+    
     public void onScanCardFinished(Card card, @Nullable byte[] cardImage) {
         Intent intent = new Intent();
         intent.putExtra(ScanCardIntent.RESULT_PAYCARDS_CARD, (Parcelable) card);
@@ -101,7 +101,7 @@ public class ScanCardActivity extends AppCompatActivity implements ScanCardFragm
     }
 
     @Override
-    @RestrictTo(RestrictTo.Scope.LIBRARY)
+    
     public void onInitLibraryComplete() {
         if (isFinishing()) return;
         showScanCard();
